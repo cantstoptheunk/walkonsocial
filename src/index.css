@@ -160,3 +160,26 @@ section:last-of-type {
   color: var(--color-text);
   opacity: 0.75;
 }
+
+.photo-band {
+  margin: 0 -56px 56px;
+  overflow: hidden;
+}
+
+.photo-band img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+@media (max-width: 640px) {
+  .photo-band {
+    margin: 0 -20px 40px;
+  }
+
+  .photo-band img {
+    height: 220px;
+  }
+}
