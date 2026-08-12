@@ -14,7 +14,7 @@ npm run dev
 ## Setting up the Stripe Payment Link
 
 1. In the Stripe Dashboard, create a Payment Link for the $60 season registration product.
-2. Under the Payment Link's "After payment" settings, set the redirect to `https://<your-domain>/?success=true`.
+2. Under the Payment Link's "After payment" settings, set the redirect to `https://walkonsocial.com/?success=true`.
 3. Copy the Payment Link URL into `VITE_STRIPE_PAYMENT_LINK` (locally in `.env.local`, and in Amplify's environment variables for production).
 
 Every registration — free agent or team — is tagged with a `client_reference_id` query param on the Payment Link (`Free Agent` or the team name), filterable in the Stripe Dashboard/exports. Reconciling who's a free agent vs. on a team is done manually from that data.
