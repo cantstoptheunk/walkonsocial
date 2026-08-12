@@ -31,7 +31,7 @@ export default function DefaultSignup({ paymentLinkBaseUrl }) {
         <a href={faPayUrl} className="btn btn-primary">Sign Up as Free Agent – $60</a>
       </div>
 
-      <div className="signup-option">
+      <div className="signup-option" id="team-form">
         <h3>Register a Team</h3>
         <input
           type="text"
