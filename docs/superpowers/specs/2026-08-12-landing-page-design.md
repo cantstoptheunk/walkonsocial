@@ -6,12 +6,12 @@ A single-page React landing site for **Walk-On Social**, an adult rec soccer lea
 
 ## Season Details (v1 — soccer only)
 
-- **Format:** 7v7, 25-minute halves
+- **Format:** 7v7 coed, 25-minute halves
 - **Schedule:** Saturdays and Sundays, 10:00am–1:00pm
-- **Season:** Sept 5–6, 12–13, 19–20, 26–27, Oct 3–4, Oct 10–11 (6 weeks)
+- **Season:** Sept 5 – Oct 11 (6 weeks)
 - **Playoffs:** Oct 17–18
 - **Location:** Lakewood Memorial Field, 7655 W 10th Ave, Lakewood, CO 80214
-- **Price:** $60 all-in per player (covers full season + playoffs)
+- **Price:** $60 flat fee per player, including tax (covers full season + playoffs)
 
 ## Architecture
 
@@ -25,21 +25,26 @@ A single-page React landing site for **Walk-On Social**, an adult rec soccer lea
 
 Path-based URLs (`/team/kickback-fc`) look nicer but require a router library plus a host-level SPA rewrite rule so a page refresh on a deep path doesn't 404. Query-param URLs (`/?team=kickback-fc`) need neither — every request hits the same `/` route Amplify already serves by default, and the "routing" is just three states of one component based on `URLSearchParams`. Chosen for simplicity; the shared-link UX is identical either way.
 
-## Visual Style — "Bold Turf"
+## Visual Style — "Editorial Minimal"
 
-- Dark turf-green background (`#0d2818`), cream text (`#f4f1e8`), burnt-orange accent for primary CTAs (`#e8542e`)
-- Bold, condensed sans-serif for headlines; clean sans-serif for body copy
-- Athletic, high-contrast, "this is a real league" tone — not a soft/minimal startup look
+Redesigned from the original "Bold Turf" look toward a cleaner, more editorial feel (loosely inspired by moheim.com — a minimal, photography-forward product site — without copying it directly).
+
+- **Palette:** cream/off-white background (`#f2efe6`), near-black text (`#1f2d22`), the existing burnt-orange (`#e8542e`) kept as the sole accent for CTAs and highlighted labels. No sage-green or other new accent color introduced — the brand orange carries over from the original dark theme.
+- **Typography:** large, bold sans-serif headlines (not serif) — chosen over a serif treatment as the closer match to the editorial-minimal reference. Body copy in a lighter-weight sans-serif for contrast.
+- **Layout width:** widened from the original narrow single column (`max-width: 720px`) to a more spacious ~960–1100px container with generous side margins, to give the editorial-minimal type and photography room to breathe.
+- **Photography:** a full-width photo band of real team/league photography sits directly below the hero (hero itself stays pure type — no photo bleed into it). One additional real photo may be added lower on the page (e.g. near sign-up or season details) so the "real community" feeling isn't carried by a single hero image alone. Actual photography to be sourced/confirmed before implementation — mockups used a placeholder reference image, not confirmed Walk-On Social photography.
+- **Tone:** still "this is a real league," but calmer and more polished than the original high-contrast turf look — clean, modern, image-forward rather than loud.
 
 ## Page Structure
 
 One scrolling page:
 
-1. **Hero** — wordmark, tagline, season dates at a glance, two primary CTAs: **Sign Up as Free Agent** and **Register a Team**
-2. **Season Details** — format, schedule, 6 weeks + playoffs, location with a Google Maps link
-3. **Pricing** — "$60 all-in" callout, one line on what it covers
-4. **Sign Up** — the interactive section; see [Sign-Up Flow](#sign-up--team-link-data-flow) below
-5. **Footer** — contact email (walkonsocial@gmail.com), one-line FAQ ("Free agent? We'll place you on a team.")
+1. **Hero** — pure-type hero: eyebrow label, large "Adult Coed Rec Soccer. Saturdays & Sundays." headline, season dates at a glance, two primary CTAs: **Sign Up as Free Agent** and **Register a Team**
+2. **Photo band** — full-width real photography, directly below the hero, no copy overlaid
+3. **Season Details** — format (7v7 coed), schedule, 6 weeks + playoffs, location with a Google Maps link
+4. **Pricing** — "$60 Flat Fee" callout, one line noting it includes tax and what it covers
+5. **Sign Up** — the interactive section; see [Sign-Up Flow](#sign-up--team-link-data-flow) below
+6. **Footer** — contact email (walkonsocial@gmail.com), one-line FAQ ("Free agent? We'll place you on a team.")
 
 ## Sign-Up & Team-Link Data Flow
 
