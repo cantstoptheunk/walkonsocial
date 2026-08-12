@@ -213,7 +213,7 @@ section:last-of-type {
 }
 
 .photo-band {
-  margin: 0 -56px 56px;
+  margin: 40px -56px 56px;
   overflow: hidden;
 }
 
@@ -227,7 +227,7 @@ section:last-of-type {
 
 @media (max-width: 640px) {
   .photo-band {
-    margin: 0 -56px 40px;
+    margin: 28px -56px 40px;
   }
 
   .photo-band img {
