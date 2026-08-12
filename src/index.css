@@ -51,3 +51,33 @@ section {
   color: var(--color-text);
   border: 1.5px solid var(--color-text);
 }
+
+.hero-eyebrow {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent-muted);
+  font-size: 12px;
+  margin: 0;
+}
+
+.hero-dates {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.season-details ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.season-details a {
+  color: var(--color-accent-muted);
+}

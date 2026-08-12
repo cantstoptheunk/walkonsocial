@@ -1,7 +1,13 @@
+import Hero from './components/Hero'
+import SeasonDetails from './components/SeasonDetails'
+import Pricing from './components/Pricing'
+
 export default function App() {
   return (
     <div className="app">
-      <h1>Walk-On Social</h1>
+      <Hero />
+      <SeasonDetails />
+      <Pricing />
     </div>
   )
 }
