@@ -1,8 +1,9 @@
 :root {
-  --color-bg: #0d2818;
-  --color-text: #f4f1e8;
+  --color-bg: #f2efe6;
+  --color-text: #1f2d22;
+  --color-text-muted: #5b5a4f;
   --color-accent: #e8542e;
-  --color-accent-muted: #8fd19e;
+  --color-border: #e2ddd0;
 }
 
 * {
@@ -13,21 +14,28 @@ body {
   margin: 0;
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .app {
-  max-width: 720px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 32px 56px;
 }
 
 h1, h2, h3 {
   font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 section {
-  margin: 40px 0;
+  margin: 56px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+section:last-of-type {
+  border-bottom: none;
 }
 
 .btn {
