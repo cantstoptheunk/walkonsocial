@@ -141,14 +141,15 @@ section:last-of-type {
 }
 
 .footer {
-  border-top: 1px solid rgba(244, 241, 232, 0.2);
+  border-top: 1px solid var(--color-border);
   margin-top: 60px;
   padding-top: 20px;
-  font-size: 14px;
+  font-size: 13px;
+  color: var(--color-text-muted);
 }
 
 .footer a {
-  color: var(--color-accent-muted);
+  color: var(--color-accent);
 }
 
 .signup-section {
