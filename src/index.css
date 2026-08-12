@@ -81,3 +81,14 @@ section {
 .season-details a {
   color: var(--color-accent-muted);
 }
+
+.footer {
+  border-top: 1px solid rgba(244, 241, 232, 0.2);
+  margin-top: 60px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: var(--color-accent-muted);
+}
