@@ -98,14 +98,46 @@ section:last-of-type {
   }
 }
 
-.season-details ul {
-  list-style: none;
-  padding: 0;
-  line-height: 1.8;
+.section-label {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-size: 12px;
+  margin: 0 0 18px;
+}
+
+.season-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 40px;
+  font-size: 16px;
+}
+
+.season-grid strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.season-grid span {
+  color: var(--color-text-muted);
+}
+
+.season-grid-full {
+  grid-column: span 2;
 }
 
 .season-details a {
-  color: var(--color-accent-muted);
+  color: var(--color-accent);
+}
+
+@media (max-width: 640px) {
+  .season-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .season-grid-full {
+    grid-column: span 1;
+  }
 }
 
 .footer {
