@@ -92,3 +92,13 @@ section {
 .footer a {
   color: var(--color-accent-muted);
 }
+
+.signup-section {
+  background: rgba(244, 241, 232, 0.05);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.thank-you, .join-team {
+  text-align: center;
+}

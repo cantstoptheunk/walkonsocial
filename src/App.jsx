@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import SeasonDetails from './components/SeasonDetails'
 import Pricing from './components/Pricing'
+import SignUpSection from './components/SignUpSection'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <Hero />
       <SeasonDetails />
       <Pricing />
+      <SignUpSection />
       <Footer />
     </div>
   )
