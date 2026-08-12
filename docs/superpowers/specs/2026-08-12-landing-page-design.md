@@ -39,7 +39,7 @@ One scrolling page:
 2. **Season Details** — format, schedule, 6 weeks + playoffs, location with a Google Maps link
 3. **Pricing** — "$60 all-in" callout, one line on what it covers
 4. **Sign Up** — the interactive section; see [Sign-Up Flow](#sign-up--team-link-data-flow) below
-5. **Footer** — contact info/email, one-line FAQ ("Free agent? We'll place you on a team.")
+5. **Footer** — contact email (walkonsocial@gmail.com), one-line FAQ ("Free agent? We'll place you on a team.")
 
 ## Sign-Up & Team-Link Data Flow
 
