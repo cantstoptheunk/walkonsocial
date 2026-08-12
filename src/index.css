@@ -152,9 +152,9 @@ section:last-of-type {
 }
 
 .signup-section {
-  background: rgba(244, 241, 232, 0.05);
-  border-radius: 8px;
-  padding: 24px;
+  background: #ece7d9;
+  border-radius: 4px;
+  padding: 40px 48px;
 }
 
 .thank-you, .join-team {
@@ -177,9 +177,9 @@ section:last-of-type {
   max-width: 320px;
   padding: 10px 12px;
   margin: 12px 0;
-  border-radius: 4px;
-  border: 1.5px solid var(--color-text);
-  background: transparent;
+  border-radius: 2px;
+  border: 1.5px solid var(--color-border);
+  background: #fff;
   color: var(--color-text);
   font-size: 14px;
 }
@@ -194,9 +194,9 @@ section:last-of-type {
 .team-link-field {
   flex: 1;
   padding: 10px 12px;
-  border-radius: 4px;
-  border: 1.5px solid var(--color-text);
-  background: transparent;
+  border-radius: 2px;
+  border: 1.5px solid var(--color-border);
+  background: #fff;
   color: var(--color-text);
   font-size: 13px;
 }
@@ -208,7 +208,7 @@ section:last-of-type {
 
 .secondary-link a {
   color: var(--color-text);
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 .photo-band {
