@@ -16,8 +16,11 @@ export default function DefaultSignup({ paymentLinkBaseUrl }) {
   }
 
   function handleCopy() {
-    navigator.clipboard.writeText(teamLink)
-    setCopied(true)
+    if (!navigator.clipboard) return
+    navigator.clipboard
+      .writeText(teamLink)
+      .then(() => setCopied(true))
+      .catch(() => {})
   }
 
   return (

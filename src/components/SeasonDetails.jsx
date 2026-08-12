@@ -5,7 +5,7 @@ export default function SeasonDetails() {
       <ul>
         <li><strong>Format:</strong> 7v7, 25-minute halves</li>
         <li><strong>Schedule:</strong> Saturdays &amp; Sundays, 10:00am–1:00pm</li>
-        <li><strong>Season:</strong> Sept 5 – Oct 11 (6 weeks)</li>
+        <li><strong>Season:</strong> Sept 5–6, 12–13, 19–20, 26–27, Oct 3–4, Oct 10–11 (6 weeks)</li>
         <li><strong>Playoffs:</strong> Oct 17–18</li>
         <li>
           <strong>Location:</strong>{' '}

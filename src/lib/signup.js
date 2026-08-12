@@ -8,7 +8,7 @@ export function getSignupState(search = window.location.search) {
   }
 
   const team = params.get('team')
-  if (team && team.trim().length > 0) {
+  if (team && isValidTeamName(team)) {
     return { type: 'team', name: team.trim() }
   }
 
@@ -24,6 +24,16 @@ export function buildTeamLink(name, origin = window.location.origin) {
   return `${origin}/?team=${encodeURIComponent(name.trim())}`
 }
 
+export function toClientReferenceId(name) {
+  return name
+    .trim()
+    .replace(/[^A-Za-z0-9_-]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 200)
+}
+
 export function buildPaymentUrl(paymentLinkBaseUrl, clientReferenceId) {
-  return `${paymentLinkBaseUrl}?client_reference_id=${encodeURIComponent(clientReferenceId)}`
+  const url = new URL(paymentLinkBaseUrl)
+  url.searchParams.set('client_reference_id', toClientReferenceId(clientReferenceId))
+  return url.toString()
 }
